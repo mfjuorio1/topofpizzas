@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styleus.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzerium!</title>
+    <script>
+        function validaremail(){
+            let mail=document.getElementById('email').value;
+            if (mail.includes('@') && mail.includes('.com') && mail !==''){
+                alert('si es mail.');
+            }if (mail==''){
+                alert('mail vacio')
+            }
+                
+            
+        
+        }
+        function validaruser(){
+            let usuario=document.getElementById("nombre").value;
+                if (usuario.length<1){
+                    alert('Nombre Vacio!');
+                    event.preventDefault();
+                }else{
+                    document.getElementById("output").innerHTML= 'Respuesta registrada.';
+                    event.preventDefault();
+                }}
+        function validarasist(){
+            let confirma=document.getElementById('confirma');
+            if (!confirma.checked){
+                alert('Confirme su asistencia.');
+            }
+        }
+        function validarselect(){
+
+        }
+        function validar(){
+            validaruser(); 
+            validaremail();
+            validarasist();
+            validarselect();
+            event.preventDefault();
+        }
+        
+    </script>
+
+</head>
+<body>
+    <header>
+        <h1>Pizzerium!</h1>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Menu</a></li>
+                <li><a href="formulario.html">Recetas</a></li>
+                <li><a href="aboutus.html">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+        <ul>
+            <li><img src="img/pinia1.jpg" alt="pinia1"><img src="img/pinia2.jpeg" alt="pinia2"></li>
+        </ul>
+        
+        <p>Los comienzos de Pizzerium!, no siempre estuvimos dedicados a Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ad dolorem minus ea enim consequatur deleniti illum voluptatum accusamus consectetur sit iusto saepe exercitationem nisi beatae, voluptates, amet rerum perspiciatis.</p>
+        <div class="formulario">
+            <h1>Ingrese sus datos para realizar la reserva.</h1>
+    <form>
+        <label for="nombre"></label>
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <label for="email"></label>
+        <input type="email" id="email" placeholder="Correo electronico" required><br>
+        <label for="piso"></label>
+        <select name="piso" id="piso" required>
+            <option value="">Seleccione una opcion.</option>
+            <option value="piso1">Primer piso</option>
+            <option value="piso2">Terraza</option>
+        </select>
+        <label for="fecha"></label>
+        <input type="date" id="fecha" placeholder="hola"><br>
+        <label for="confirma">Confirmo asistencia.</label>
+        <input type="checkbox" id="confirma" required>
+        <button onclick="validar()">Enviar</button>
+    </form>
+
+        </div>
+        
+    </main>
+    <footer>
+        <p>&reg;1992-2023 Pizzerium. todos derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
