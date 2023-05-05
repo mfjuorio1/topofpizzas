@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Ejemplo</title>
+    <script>
+        function validaremail(){
+            let mail=document.getElementById('email').value;
+            if (mail.includes('@') && mail.includes('.com') && mail !==''){
+                alert('si es mail.');
+            }if (mail==''){
+                alert('mail vacio')
+            }
+                
+            
+        
+        }
+        function validaruser(){
+            let usuario=document.getElementById("nombre").value;
+                if (usuario.length<1){
+                    alert('Nombre Vacio!');
+                    event.preventDefault();
+                }else{
+                    document.getElementById("output").innerHTML= 'Respuesta registrada.';
+                    event.preventDefault();
+                }}
+        function validarasist(){
+            let confirma=document.getElementById('confirma');
+            if (!confirma.checked){
+                alert('Confirme su asistencia.');
+            }
+        }
+        function validar(){
+            validaruser(); 
+            validaremail();
+            validarasist(); 
+            window.location.replace('https://www.google.com/');
+        }
+        
+    </script>
+</head>
+<body>
+    <h1>Ingrese sus datos para realizar la reserva.</h1>
+    <form>
+        <label for="nombre"></label>
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <label for="email"></label>
+        <input type="email" id="email" placeholder="Correo electronico" required><br>
+        <label for="piso"></label>
+        <select name="piso" id="piso" required>
+            <option value="">Seleccione una opcion.</option>
+            <option value="piso1">Primer piso</option>
+            <option value="piso2">Terraza</option>
+        </select>
+        <label for="fecha"></label>
+        <input type="date" id="fecha" placeholder="hola"><br>
+        <label for="confirma">Confirmo asistencia.</label>
+        <input type="checkbox" id="confirma" required>
+        <button onclick="validar()">Enviar</button>
+    </form>
+    <h2 id="output"></h2>
+</body>
+</html>
+
