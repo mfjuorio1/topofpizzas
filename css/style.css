@@ -29,7 +29,7 @@ body {
   
   .menu {
     width: 90%;
-    background-color: rgb(51, 83, 189);
+    background-color: rgb(202, 101, 19);
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -55,4 +55,8 @@ display:inline-block;
   .ingr, .sabor {
     text-align: right;
     width: 50%;
+  }
+
+  .none {
+    display: none;
   }
