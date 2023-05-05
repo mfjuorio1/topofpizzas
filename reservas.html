@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/x-icon" href="/img/favicon-pizza2.ico">
+    <link rel="validar" href="./index_dom.js">
     <title>TopOfPizzas</title>
 </head>
 <body>
@@ -21,26 +22,32 @@
    <h1 id="title">RESERVAS</h1>
     <p id="description">Gracias por tu reserva - tolerancia máxima 30 minutos</p>
     
-    <form method="post"  id="survey-form">
+    <form method="post"  id="booking-form" class="booking-form">
         <!--acá falta un action que vaya a base de datos, tipo "action='https://reservas.basededatos.com"-->
        <fieldset>
-        <label for="name" id="name-label">Ingrese su nombre: <input id="name" name="name" type="text" required placeholder="Nombre"/></label>
+        <label for="name" id="name-label">Ingrese su nombre: <input id="name" name="name" type="text" placeholder="Nombre" title="solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required/></label> 
         <br>
-        <label for="email" id="email-label">Ingrese su email: <input id="email" name="email" type="email" required placeholder="Email"/></label>
+        <label for="email" id="email-label">Ingrese su email: <input id="email" name="email" type="email" placeholder="Email" title="formato de email incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required/></label> 
         <br>
-        <label for="mobile" id="number-label">Ingrese su celular: <input type="tel" id="phone" name="phone" pattern="[0-9]{2-4}-[0-9]{4}-[0-9]{4}"></label>
+        <label for="mobile" id="number-label">Ingrese su celular: <input type="phone" id="phone" name="phone" placeholder="Celular" title="codigo de area sin el 15" pattern="[0-9]{2-4}-[0-9]{4}-[0-9]{4}" required></label><!--lo saque de w3schools-->
        <br>
-       <label for="date" id="number-date">Fecha de reserva: <input type="date" id="datemin" name="datemin" min="2023-05-01"></label>
-       <p>Te contactaremos a la brevedad</p>
+       <label for="date" id="number-date">Fecha de reserva: <input type="date" id="date" name="date" min="2023-05-20" max="2023-12-23" required></label>
+       <!--<p>Te contactaremos a la brevedad</p>-->
        <!-- en este imput habria que ver como se pone un min-value="today"max-value="today+a-month" por ejemplo-->
         <br>
     </fieldset>
       <fieldset>
         <legend> Comentarios o sugerencias? Pedidos especiales? </legend>
-        <textarea id="comments" name="comments" rows="2" cols="50" placeholder="Me gustaría que..."></textarea>
+        <textarea id="comments" name="comments" rows="5" cols="50" placeholder="Me gustaría que..." title="Tu comentario no debe exceder los 255 caracteres" data-pattern="^.{1,255}$" required></textarea>
         <br>
     </fieldset>
-    <input type="submit" id="submit" value="Enviar"/>    
+    <input type="submit" id="submit" value="Enviar"/>
+    <div class="booking-form-loader none">
+      <img src="./img/pizza-loader.svg" alt="Cargando">
+    </div>
+    <div class="booking-form-response none">
+      <p>Sus datos han sido enviados. Lo contactaremos a la brevedad. Muchas gracias!</p>
+    </div>    
     </form>
     <footer>
       <p>

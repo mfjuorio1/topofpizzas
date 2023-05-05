@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/x-icon" href="/img/favicon-pizza2.ico">
+    <link rel="validar" href="./index_dom.js">
     <title>TopOfPizzas</title>
 </head>
 <body>
@@ -50,10 +51,16 @@
     </fieldset>
         <fieldset>
         <legend> Comentarios o sugerencias? Pedidos especiales? </legend>
-        <textarea id="comments" name="comments" rows="2" cols="50" placeholder="Me gustaría que..."></textarea>
+        <textarea id="comments" name="comments" rows="5" cols="50" placeholder="Me gustaría que..." title="Tu comentario no debe exceder los 255 caracteres" data-pattern="^.{1,255}$" required></textarea>
         <br>
     </fieldset>
-    <input type="submit" id="submit" value="Enviar"/>    
+    <input type="submit" id="submit" value="Enviar"/>
+    <div class="booking-form-loader none">
+      <img src="./img/pizza-loader.svg" alt="Cargando">
+    </div>
+    <div class="booking-form-response none">
+      <p>Sus comentarios han sido enviados. Muchas gracias!</p>
+    </div>        
     </form>
     <footer>
       <p>
