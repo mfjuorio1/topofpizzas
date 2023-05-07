@@ -20,10 +20,37 @@
         </nav>
     </header>
    <h1 id="title">RESERVAS</h1>
-    <p id="description">Gracias por tu reserva - tolerancia máxima 30 minutos</p>
-    
-    <form method="post"  id="booking-form" class="booking-form">
-        <!--acá falta un action que vaya a base de datos, tipo "action='https://reservas.basededatos.com"-->
+    <p id="description">Gracias por tu reserva - tolerancia máxima 30 minutos</p><br><br>
+        <div id="carouselCityViews" class="slider" data-ride="carousel" data-interval="500">
+          <div class="slider-slides">
+        <div class="slider-slide active" data-interval="10000">
+          <img src="./img/BsAs2.JPG" class="d-block w-100" alt="de dia" width="550" height="250">
+        </div>
+        <div class="slider-slide" data-interval="2000">
+          <h4>DE DIA</h4>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="slider-slide" data-bs-interval="2000">
+          <img src="./img/NYC2.JPG" class="d-block w-100" alt="de noche"width="550" height="250">
+        </div>
+        <div class="slider-slide" data-interval="2000">
+          <h4>DE NOCHE</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ea.</p>
+        </div>
+      </div>
+      <div class="slider-btns">
+        <a class="prev" href="#">&laquo;</a>
+        <a class="next" href="#">&raquo;</a>
+      </div>
+      </div>
+    <!--<script>
+      $(document).ready(function(){
+  // Activate the Carousel, but pause it from the start
+  $("#carouselCityViews").carousel("pause");
+});
+    </script>-->
+    <form method="post"  id="booking-form" class="booking-form" action="https://formsubmit.co/mfjuorio@gmail.com" method="POST">
+        <!--acá falta un action que vaya a base de datos-->
        <fieldset>
         <label for="name" id="name-label">Ingrese su nombre: <input id="name" name="name" type="text" placeholder="Nombre" title="solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required/></label> 
         <br>
@@ -37,15 +64,15 @@
         <br>
     </fieldset>
       <fieldset>
-        <legend> Comentarios o sugerencias? Pedidos especiales? </legend>
+        <legend> ¿Cuántos vienen? ¿Almuerzo o cena? ¿Pedidos especiales? </legend>
         <textarea id="comments" name="comments" rows="5" cols="50" placeholder="Me gustaría que..." title="Tu comentario no debe exceder los 255 caracteres" data-pattern="^.{1,255}$" required></textarea>
         <br>
     </fieldset>
     <input type="submit" id="submit" value="Enviar"/>
-    <div class="booking-form-loader none">
+    <div class="booking-form-loader none"> <!--tiene el none-->
       <img src="./img/pizza-loader.svg" alt="Cargando">
     </div>
-    <div class="booking-form-response none">
+    <div class="booking-form-response none"> <!--tiene el none-->
       <p>Sus datos han sido enviados. Lo contactaremos a la brevedad. Muchas gracias!</p>
     </div>    
     </form>

@@ -42,5 +42,5 @@ document.addEventListener("DOMContentLoaded", function() {
       //alert('La clave no es válida');
      //return;
     }
-    this.submit();
+    this.submit();{
   }

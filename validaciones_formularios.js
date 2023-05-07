@@ -62,11 +62,11 @@ export default function bookingFormValidations() {
         input.insertAdjacentElement("afterend", $span);
     });
     // se puede hacer con el submit en vez de keyup
-    d.addEventListener("keyup",(e)=>{ 
-        if(e.target.matches("booking-form[required]")){
-            let $input = e.target,
-            pattern = $input.pattern || $input.dataset.pattern;
-            }});
+    //d.addEventListener("keyup",(e)=>{ 
+       // if(e.target.matches("booking-form[required]")){
+       //     let $input = e.target,
+       //     pattern = $input.pattern || $input.dataset.pattern;
+       //     }});
     
     
 
@@ -94,19 +94,22 @@ export default function bookingFormValidations() {
 
     
 
-d.addEventListener("submit",(e) => {
+d.addEventListener("submit",(e)=>{
         e.preventDefault();
         alert("Enviando Formulario");
     
-const $loader = querySelector(".booking-form-loader");
-    $response = querySelector(".booking-form-response");
+const $loader=d.querySelector(".booking-form-loader"),
+    $response=d.querySelector(".booking-form-response");
 
     $loader.classList.remove("none");
 
-    setTimeout(()=> {
+    setTimeout(()=>{
         $loader.classList.add("none");
         $response.classList.remove("none");
-    }, 3000)
+        $form.reset();
+
+        setTimeout(()=>$response.classList.add("none"),3000);
+    },3000);
 });
 }
 
