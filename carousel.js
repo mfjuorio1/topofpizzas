@@ -1,5 +1,5 @@
 
-$("#slider").carousel();
+//$("#slider").carousel();
 
 const d = document;
 

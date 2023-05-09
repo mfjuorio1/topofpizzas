@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" type="image/x-icon" href="/img/favicon-pizza2.ico">
+    <link rel="icon" type="image/x-icon" href="/img/favicon-slice2.ico">
     <link rel="validar" href="./index_dom.js">
     <title>TopOfPizzas</title>
 </head>
@@ -20,15 +20,15 @@
         </nav>
     </header>
    <h1 id="title">COMENTARIOS</h1>
-      
+   <form method="post"  id="contact-form" class="contact-form" action="https://formsubmit.co/mfjuorio@gmail.com" method="POST">
       <fieldset>
         <!--esto lo puse en otra página siguiendo la sugerencia de Joaquín de las fotos de los clientes
         pero hay que lograr que funcione el input de esa foto-->
-        <label for="recommend">Ya viniste? Subí tu foto
-          <input type="text" name="pizzaphotourl" placeholder="subi tu foto">
-          <button type="submit">Enviar</button></label>
+        <label for="visit" title="Por favor, completar" required>Ya viniste? 
+        <label for="Yes"><input id="Yes" type="radio" name="visit-type" value="Yes"/> Si!</label>
+        <label for="No"><input id="No" type="radio" name="visit-type" value="No" /> No todavía</label>
         <br><br>
-        <label>Nos recomendarías?</label>
+        <label for="recommend-type" title="Por favor, completar" required>Nos recomendarías?</label>
         <br><br>
         <label for="definitely"><input id="definitely" type="radio" name="recommend-type" value="3" /> Seguro</label>
         <label for="maybe"><input id="maybe" type="radio" name="recommend-type" value="2" /> Puede ser</label>
@@ -38,9 +38,8 @@
           <label for="food"><input id="food" type="checkbox" name="to-improve-type" value="food"/> Comida</label>
           <label for="att"><input id="att" type="checkbox" name="to-improve-type" value="att"/> Atencion</label>
           <label for="amb"><input id="amb" type="checkbox" name="to-improve-type" value="amb"/> Ambiente</label>
-          <label for="other"><input id="other" type="checkbox" name="to-improve-type" value="other" /> Todo</label>
-        <br><br>
-        <label for="interest"> Que es lo que más te gustó?</label> 
+          <br><br>
+        <label for="interest" title="Por favor, completar" required> Que es lo que más te gustó?</label> 
             <select id="dropdown" name="interest" class="form-control" required>
               <option disabled="" selected="" value="">Elegí lo que más te gustó</option>
               <option value="1">Comida</option>

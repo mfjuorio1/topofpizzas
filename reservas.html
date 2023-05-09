@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" type="image/x-icon" href="/img/favicon-pizza2.ico">
+    <link rel="icon" type="image/x-icon" href="/img/favicon-slice2.ico">
     <link rel="validar" href="./index_dom.js">
     <title>TopOfPizzas</title>
 </head>
@@ -21,19 +21,19 @@
     </header>
    <h1 id="title">RESERVAS</h1>
     <p id="description">Gracias por tu reserva - tolerancia máxima 30 minutos</p><br><br>
-        <div id="carouselCityViews" class="slider" data-ride="carousel" data-interval="500">
+        <div id="carouselCityViews" class="slider">
           <div class="slider-slides">
-        <div class="slider-slide active" data-interval="10000">
-          <img src="./img/BsAs2.JPG" class="d-block w-100" alt="de dia" width="550" height="250">
+        <div class="slider-slide">
+          <img src="./img/BsAs2.JPG" alt="de dia" width="550" height="250">
         </div>
-        <div class="slider-slide" data-interval="2000">
+        <div class="slider-slide">
           <h4>DE DIA</h4>
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
-        <div class="slider-slide" data-bs-interval="2000">
-          <img src="./img/NYC2.JPG" class="d-block w-100" alt="de noche"width="550" height="250">
+        <div class="slider-slide active">
+          <img src="./img/NYC2.JPG" alt="de noche"width="550" height="250">
         </div>
-        <div class="slider-slide" data-interval="2000">
+        <div class="slider-slide" >
           <h4>DE NOCHE</h4>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ea.</p>
         </div>
@@ -50,7 +50,7 @@
 });
     </script>-->
     <form method="post"  id="booking-form" class="booking-form" action="https://formsubmit.co/mfjuorio@gmail.com" method="POST">
-        <!--acá falta un action que vaya a base de datos-->
+        <!--acá falta un action que vaya a base de datos reemplazado por formsubmit.co-->
        <fieldset>
         <label for="name" id="name-label">Ingrese su nombre: <input id="name" name="name" type="text" placeholder="Nombre" title="solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required/></label> 
         <br>
@@ -69,10 +69,10 @@
         <br>
     </fieldset>
     <input type="submit" id="submit" value="Enviar"/>
-    <div class="booking-form-loader none"> <!--tiene el none-->
+    <div class="booking-form-loader none"> <!--el none no aparece/desaparece con el add/remove de js-->
       <img src="./img/pizza-loader.svg" alt="Cargando">
     </div>
-    <div class="booking-form-response none"> <!--tiene el none-->
+    <div class="booking-form-response none"> <!-- el none no aparece/desaparece con el add/remove de js-->
       <p>Sus datos han sido enviados. Lo contactaremos a la brevedad. Muchas gracias!</p>
     </div>    
     </form>

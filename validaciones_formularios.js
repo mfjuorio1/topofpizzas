@@ -94,12 +94,12 @@ export default function bookingFormValidations() {
 
     
 
-d.addEventListener("submit",(e)=>{
+d.addEventListener("submit",e=>{
         e.preventDefault();
         alert("Enviando Formulario");
     
-const $loader=d.querySelector(".booking-form-loader"),
-    $response=d.querySelector(".booking-form-response");
+const $loader=d.querySelector("booking-form-loader"),
+    $response=d.querySelector("booking-form-response");
 
     $loader.classList.remove("none");
 

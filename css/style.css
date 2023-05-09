@@ -1,6 +1,10 @@
+body{
+  background-image: url(./img/1309914.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .contact {
-    background-image: url("img/1309914");
-    /*NO SE COMO SE PONE ESTO*/
     font-family: sans-serif;
     padding: 20px;
   }
@@ -63,21 +67,21 @@ display:inline-block;
 
   /*****Responsive Slider Jon Mircha ****/
   
-  /*.header {
+  .header {
     z-index: 997;
-  }*/
+  }
   .slider {
     position: relative;
     width: 80%;
     margin:1rem auto;
     text-align: center;
-    animation: slide 15s infinite;
+    /*animation: slide 15s infinite;*/
   }
 
 .slider-slides {
   position: relative;
   height: 400px;
-  animation: slide 15s infinite;
+  /*animation: slide 15s infinite;*/
 }
 
 .slider-slide {
@@ -89,7 +93,7 @@ display:inline-block;
   opacity:0;
   visibility: hidden;
   transition: opacity 1s ease;
-  animation: slide 15s infinite;
+  /*animation: slide 15s infinite;*/
 }
 
 .slider-slide img {
@@ -97,12 +101,13 @@ display:inline-block;
   width: inherit;
   object-fit: cover;
   object-position: 50% 50%;
-  animation: slide 15s infinite;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  /*animation: slide 15s infinite;*/
 }
 .slider-slide.active {
   opacity:1;
   visibility: visible;
-  animation: slide 15s infinite;
+  /*animation: slide 15s infinite;*/
 }
 
 .slider-btns{
@@ -129,4 +134,41 @@ transition: all 0.3s ease;
 
 .slider a:hover {
   color:#4d4d4d;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 2500px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+  .gallery::after {
+    content: "";
+    width: 350px;
+  }
+
+   .header {
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    padding: 10px 20 px; 
+    border-radius: 5px;
+    text-decoration: none;
+    width:200px;
+    cursor: pointer;
+    text-align: center;
 }
