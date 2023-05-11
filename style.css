@@ -80,4 +80,54 @@ footer{
     padding-left: -5%;
     text-align: right;
 }
+.redesL{
+    display: flex;
+    background-color: gray;
+    list-style:none;
+    justify-content: center;
+    margin-block-start: 1%;
+
+}
+.redesL li{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 2%;
+    height: 100%;
+    width: fit-content;
+    background-color: beige;
+    padding: 1.5%;
+}
+.redesL a{
+    width:max-content;
+    text-decoration: none;
+    color: black;
+    height: fit-content;
+}
+.redesL img{
+    display: flex;
+    padding: 0;
+    margin: auto;   
+}
+footer{
+    background-color: black;
+    color: yellow;
+    width: 100%;
+}
+.bienvenido{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -2%;
+}
+.bienvenido h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+footer p{
+    display: flex;
+    justify-content: center;
+    margin:-1% ;
+    padding: 0.2%;
+}
  

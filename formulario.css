@@ -1,0 +1,51 @@
+form{
+    text-align: center;
+    margin: auto;
+    
+}
+.confr{
+    margin: auto;
+    text-align: right;
+    width: 50%;
+    
+}
+.total{
+    margin: ;
+   
+    padding-top:2% ;
+    padding-bottom: 2%;
+    width: 100%;
+}
+ 
+li {
+    display: inline-block;
+    list-style:none;
+    text-align: center;
+}
+.lista1 li
+
+h4{
+    display: inline-block;
+}
+ul{
+    display: inline-block;
+    text-align: center;
+    
+    margin:0;
+    width: 50%;
+}
+p{
+    font-size: 100%;
+}
+.listaS li{
+    display: inline-block;
+    
+    width: 30%;
+    margin: 0;
+    margin-top: -1110%;
+    padding-top: 0;
+}
+.totaltotal{
+    background-color: blanchedalmond;
+    border: 1px solid cornflowerblue;
+}
