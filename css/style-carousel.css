@@ -2,12 +2,9 @@ body{
     margin: 0;
     padding: 0;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    /*overflow: hidden;*/
-    align-items:center;
+   
     background-color: rgb(211, 115, 6);
-    background-image:url(./img/p1.jpeg);
+    /*background-image:url(./img/p1.jpeg);*/
     /*background-color opacity: 0.7;*/
 }
 
@@ -16,6 +13,13 @@ body{
     size-adjust: 1200px;
 
 }*/
+
+.slider-container{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items:center;
+}
 
 h1 {
     font-size: 40px;
@@ -52,7 +56,7 @@ h1 {
     width:500%; /*dice 500% y no 500px*/
     height:500px;
     display:flex;
-    justify-content: center;
+    
 }
 
 .slides input{
@@ -82,7 +86,7 @@ h1 {
 .navigation-manual{
 position:absolute;
 width:800px;
-margin-top: -40px; /*aca era-40px*/
+margin-top: 460px; /*aca era-40px*/
 display:flex;
 justify-content:center;
 }
