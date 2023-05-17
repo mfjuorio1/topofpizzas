@@ -1,8 +1,16 @@
 body{
-  background-image: url(./img/1309914.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  /*background-image: url();*/
+  background-image:url(./img/1309914.jpg);
+  /*No entiendo por qué no me lo levanta acá, pero en cambio en style-carousel.css sí, y se ven ENORMES*/
+  /*background-size: cover;*/
+  /*background-repeat: no-repeat;*/
 }
+
+/*.i.fa-solid fa-pizza-slice{
+  size:100px;
+  display: flex;
+  justify-content:center;
+}*/
 
 .contact {
     font-family: sans-serif;
@@ -28,12 +36,12 @@ body{
   }
 
   h1, h2 {
-    font-family:Impact, sans-serif;
+    font-family:Impact;
   }
   
   .menu {
     width: 90%;
-    background-color: rgb(202, 101, 19);
+    background-color: rgb(170, 79, 4);
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -155,6 +163,7 @@ transition: all 0.3s ease;
   object-fit: cover;
   border-radius: 20px;
   padding: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
   .gallery::after {
