@@ -176,7 +176,7 @@ transition: all 0.3s ease;
     text-align: center;
 }
 
-/*.footer{
-  background-image:url(./img/1309914.jpg);
+footer{
+  background-image:url(img/1309914.jpg);
   background-size: 35%;
-}*/
+}
