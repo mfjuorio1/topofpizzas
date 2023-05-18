@@ -182,7 +182,3 @@ transition: all 0.3s ease;
     text-align: center;
 }
 
-.pizza-slice{
-  display: flex;
-  justify-content: center;
-}
