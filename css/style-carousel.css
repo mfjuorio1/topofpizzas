@@ -75,10 +75,11 @@ h1 {
 
 .slide h4 {
     font-family: Impact, sans-serif;
-    font-size: 60px;
+    font-size: 30px;
     color: rgb(15, 15, 15);
     display: flex;
     justify-content: center;
+margin-top:20%;
 }
 
 /**css for manual slide navigation**/
@@ -159,4 +160,15 @@ justify-content:center;
 
 #radio4:checked ~ .navigation-auto .auto-btn4{
     background: orange;
+}
+
+.footer, .address{
+    font-family: sans-serif;
+    font-size: small;
+}
+
+.footer{
+    /*background-image: url(./img/1309914.jpg);*/
+    background-image:url(./img/p1.jpeg);
+    background-size: 35%;
 }
