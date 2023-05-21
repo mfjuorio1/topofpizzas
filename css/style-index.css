@@ -31,15 +31,15 @@ h1 {
     font-size: 30px;
   }
 
-  /*p {
+  p {
     font-size: 20px;
-  }*/
+  }
   
   .established {
     font-style: italic;
   }
   
-  h1, h2, p {
+  h1, h2, h3, p {
     font-family:Impact;
     text-align: center;
   }
@@ -79,7 +79,7 @@ h1 {
     color: rgb(15, 15, 15);
     display: flex;
     justify-content: center;
-margin-top:20%;
+/*margin-top:20%;*/
 }
 
 /**css for manual slide navigation**/
@@ -162,8 +162,18 @@ justify-content:center;
     background: orange;
 }
 
-
-footer{
+footer, .address{
     font-family: Impact,sans-serif;
     font-size: 15px;
+}
+
+.redes1{
+    font-size: 1.5em;
+    
+}
+
+.redes2{
+    display: inline-flexbox;
+    justify-content: center;
+    margin-left: 18%;
 }
