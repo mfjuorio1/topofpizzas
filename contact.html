@@ -1,29 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style-menu.css">
+    <link rel="stylesheet" href="style-menu.css">
     <link rel="icon" type="image/x-icon" href="/img/favicon-slice2.ico">
     <link rel="validar" href="./index_dom.js">
     <title>TopOfPizzas</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
+    </style>
+
 </head>
 <body>
-    <h1>TopOfPizzas</h1>
-    <h2>Pizzas de todo el mundo</h2>
+    <h1>¡TopOfPizzas!</h1>
+    <h2>Pizzas del mundo</h2>
     <header>
         <nav>
-                <a style="background-color: green; color:white" href="index.html">INICIO</a>
+                <a style="background-color: green; color:white" href="topofpizza_index.html">INICIO</a>
                 <a style="background-color: white; color:green" href="menu.html">MENU</a>
                 <a style="background-color: red; color: white" href="reservas con carrousel.html">RESERVAS</a>
         </nav>
     </header>
    <h2 id="title">CONTACTO</h2>
+   <h3>Completa el formulario ,gracias!!</h3>
    <form method="post"  id="contact-form" class="contact-form" action="https://formsubmit.co/mfjuorio@gmail.com" method="POST">
       <fieldset>
-        <!--esto lo puse en otra página siguiendo la sugerencia de Joaquín de las fotos de los clientes
-        pero hay que lograr que funcione el input de esa foto-->
+        
         <label for="visit" title="Por favor, completar" required>Ya viniste? 
         <label for="Yes"><input id="Yes" type="radio" name="visit-type" value="Yes"/> Si!</label>
         <label for="No"><input id="No" type="radio" name="visit-type" value="No" /> No todavía</label>

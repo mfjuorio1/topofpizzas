@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: rgb(211, 115, 6);
+    padding-top: 50px;
+}
+.logo{
+
+  flex: 1 1 auto;
+  height: 30px;
+}
+
+
+.contact {
+    font-family: Impact, sans-serif;
+    
+  }
+  
+  h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    background-color: brown;
+    text-align: center;
+  }
+  
+  h2 {
+    color:rgb(183, 0, 0);
+    font-family:Impact;
+    font-size: 40px;
+    text-align: center;
+  
+  }
+  h3{ 
+    font-family: 'Orbitron', sans-serif;
+    font-size: 25px;
+    color:rgb(3, 70, 9);
+    margin-top: 0;
+    margin-bottom: 15px;
+     background-image: url("topofpizza.jpg/img15.jpg");
+     background-size:80%;
+     text-align: center;
+     align-content: center;
+
+  }
+ .established {
+    font-style: italic;
+  }
+p {
+    text-align: center;
+  }
+
+
+
+  .menu {
+    width: 90%;
+    background-color: rgb(170, 79, 4);
+    border-radius: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 600px;
+  }
+  
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:-25px;
+  }
+
+  .item p {
+display:inline-block;
+  }
+
+  .flavor, .beer, .mejor{
+    text-align: left;
+    width: 50%;
+  }
+  
+  .ingr, .sabor {
+    text-align: right;
+    width: 50%;
+  }
+
+  .none {
+    display: none;
+  }
+
+
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 2500px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  padding: 10px;
+  margin:10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+  .gallery::after {
+    content: "";
+    width: 350px;
+  }
+
+   .header {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15px;
+    padding: 10px 20 px; 
+    border-radius: 5px;
+    text-decoration: none;
+    width:200px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#pizza-slice{
+display:flex;
+justify-content: center;
+zoom:200%;
+}
+
+#beer-mug{
+    display:flex;
+    justify-content: center;
+    zoom:200%;
+    }
+
+    footer{
+      font-family: Impact,sans-serif;
+      background-size: 35%;
+      margin-top: 10px;
+      padding-bottom: 50px;
+      font-size: 20px;
+  }
+  
+  

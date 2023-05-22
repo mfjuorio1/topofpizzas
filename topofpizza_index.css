@@ -1,0 +1,176 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.padre{
+    display:flex;
+    flex-flow: column nowrap;
+}
+.header{
+    background: #f4942d;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    
+    }
+    .menu{
+        background: #ffd95a;
+        display: flex;
+        flex-flow: row nowrap;
+        height: 100px;
+        align-items: center;
+    }
+    
+    
+         .i.fa-solid fa-pizza-slice{
+        size:100px;
+        display: flex;
+        justify-content:center;
+      }
+
+
+      h1 {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 50px;
+        margin-top: 0;
+        margin-bottom: 15px;
+        background-color:183,0,0;
+        text-align: center;
+      }
+      h2 {
+        font-size: 70px
+        px;
+        font-family:Impact;
+        text-align: center;
+      }
+      
+     
+      .established {
+        font-style: italic;
+      }
+      
+    p {
+        text-align: center;
+    }
+     
+
+      h3{ 
+        font-family: 'Orbitron', sans-serif;
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 15px;
+         background-image: url("topofpizza.jpg/img15.jpg");
+         background-size:80%;
+         align-content: center;
+    
+      }
+      h4{
+        text-align: center;
+        font-family:'Orbitron', sans-serif; 
+        margin: 50px 0px;
+        font-size: 1.8rem;
+      }
+      .container{
+        width: 75vw;
+        max-width: 1000px;
+        min-width: 320px;
+        margin: auto;
+     }
+     img{
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 0px 3px 5px rgba(15,15,15)
+     }
+      
+      
+    .nav{
+
+        background:brown;
+        flex: 0 0  auto;
+        height: 50px;
+    }
+    .social{
+        background:#A459D1 ;
+        flex: 1 1 auto;
+        height: 30px;
+    }
+    .texto-principal{
+        background:brown; 
+
+    }
+    h1{
+        font-family: 'Orbitron', sans-serif;
+        
+    }
+
+.section{
+    background: #f4942d;
+    display: flex;
+    
+    
+    }
+    .articulos{
+        
+        flex:2 1 auto;
+        display: flex;
+        flex-flow: wrap;
+    }
+    .article{
+        background: #0f4601;
+        flex:1 1 100%;
+        height:auto;
+    }
+.navegacion{
+    background: #0f4601;
+    flex:1 1 100%;
+}
+.aside{
+    background-image: url("topofpizza.jpg/img15.jpg");
+    background-size:80%;
+    flex:1 1 auto;
+}
+.publicidad{
+    background:#66f290 ;
+}
+.footer{
+  
+    display: flex;
+    justify-content: center;
+    background-image: url("topofpizza.jpg/img15.jpg");
+    background-size:80%;
+    font-family: Impact,sans-serif;
+    background-size: 35%;
+    margin-top: 10px;
+    padding-bottom: 50px;
+    font-size: 20px;
+   
+ }
+.pie{
+    background: #FFB84C;
+    width: auto;
+}
+@media all and (max-width:800px){
+    .section{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+    @media all and(max-width:600px){
+    .articulos{
+        flex-direction: column;
+    }
+    }
+    @media all and (max-width:400px) {
+        .aside{
+            flex-direction: column;
+        }
+        
+    }
+}
