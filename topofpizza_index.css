@@ -1,176 +1,185 @@
 *{
-    margin: 10px;
-    padding: 10px;
+    padding:0;
+    margin: 0;
     box-sizing: border-box;
 }
-.padre{
-    display:flex;
-    flex-flow: column nowrap;
-}
-.header{
-    background: #f4942d;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+#contenItemsCarrusel{
     
+    height: 200px;
+    overflow: hidden;
     }
-    .menu{
-        background: #ffd95a;
-        display: flex;
-        flex-flow: row nowrap;
-        height: 100px;
-        align-items: center;
-    }
-    
-    
-         .i.fa-solid fa-pizza-slice{
-        size:100px;
-        display: flex;
-        justify-content:center;
-      }
-
-
-      h1 {
-        font-family: 'Orbitron', sans-serif;
-        font-size: 50px;
-        margin-top: 0;
-        margin-bottom: 15px;
-        background-color:183,0,0;
-        text-align: center;
-      }
-      h2 {
-        font-size: 70px
-        px;
-        font-family:Impact;
-        text-align: center;
-      }
-      
-     
-      .established {
-        font-style: italic;
-      }
-      
-    p {
-        text-align: center;
-    }
-     
-
-      h3{ 
-        font-family: 'Orbitron', sans-serif;
-        font-size: 20px;
-        margin-top: 0;
-        margin-bottom: 15px;
-         background-image: url("topofpizza.jpg/img15.jpg");
-         background-size:80%;
-         align-content: center;
-    
-      }
-      h4{
-        text-align: center;
-        font-family:'Orbitron', sans-serif; 
-        margin: 50px 0px;
-        font-size: 1.8rem;
-      }
-      .container{
-        width: 75vw;
-        max-width: 1000px;
-        min-width: 320px;
-        margin: auto;
-     }
-     img{
-        width: 100%;
-        border-radius: 15px;
-        box-shadow: 0px 3px 5px rgba(15,15,15)
-     }
-      
-      
-    .nav{
-
-        background:brown;
-        flex: 0 0  auto;
-        height: 50px;
-    }
-    .social{
-        background:#A459D1 ;
-        flex: 1 1 auto;
-        height: 30px;
-    }
-    .texto-principal{
-        background:brown; 
-
-    }
-    h1{
-        font-family: 'Orbitron', sans-serif;
-        
-    }
-
-.section{
-    background: #f4942d;
-    display: flex;
-    
-    
-    }
-    .articulos{
-        
-        flex:2 1 auto;
-        display: flex;
-        flex-flow: wrap;
-    }
-    .article{
-        background: #0f4601;
-        flex:1 1 100%;
-        height:auto;
-    }
-.navegacion{
-    background: #0f4601;
-    flex:1 1 100%;
-}
-.aside{
-    background-image: url("topofpizza.jpg/img15.jpg");
-    background-size:80%;
-    flex:1 1 auto;
-}
-.publicidad{
-    background:#66f290 ;
-}
-.footer{
+.itemCarrusel{
   
-    display: flex;
-    justify-content: center;
-    background-image: url("topofpizza.jpg/img15.jpg");
-    background-size:80%;
-    font-family: Impact,sans-serif;
-    background-size: 35%;
-    margin-top: 10px;
-    padding-bottom: 50px;
-    font-size: 20px;
-   
- }
-.pie{
-    background: #FFB84C;
-    width: auto;
+    height:100%;
+    position: relative;
 }
-@media all and (max-width:800px){
-    .section{
-        flex-direction: column;
+.tarjetaCarrusel{
+    height: 100%;
+}
+.flechasCarrusel{
+    position:absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:30px
+    ;
+}
+.container{
+    width: 75vw;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
+}
+img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 3px 5px rgba(15, 15, 15, .5);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: rgb(211, 115, 6);
+    padding-top: 50px;
+}
+.logo{
+
+  flex: 1 1 auto;
+  height: 30px;
+}
+
+
+.contact {
+    font-family: Impact, sans-serif;
+    
+  }
+  
+  h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    background-color: brown;
+    text-align: center;
+  }
+  
+  h2 {
+    color:rgb(183, 0, 0);
+    font-family:Impact;
+    font-size: 40px;
+    text-align: center;
+  
+  }
+  h3{ 
+    font-family: 'Orbitron', sans-serif;
+    font-size: 25px;
+    color:rgb(3, 70, 9);
+    margin-top: 0;
+    margin-bottom: 15px;
+     background-image: url("topofpizza.jpg/img15.jpg");
+     background-size:80%;
+     text-align: center;
+     align-content: center;
+
+  }
+ 
+p {
+    text-align: center;
+  }
+
+
+
+  .menu {
+    width: 90%;
+    background-color: rgb(170, 79, 4);
+    border-radius: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    max-width: 600px;
+  }
+  
+  
+
+  .none {
+    display: none;
+  }
+
+
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 2500px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  padding: 10px;
+  margin:10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+  .gallery::after {
+    content: "";
+    width: 350px;
+  }
+
+   .header {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15px;
+    padding: 10px 20 px; 
+    border-radius: 5px;
+    text-decoration: none;
+    width:200px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#pizza-slice{
+display:flex;
+justify-content: center;
+zoom:200%;
+}
+
+#beer-mug{
+    display:flex;
+    justify-content: center;
+    zoom:200%;
     }
-    .menu{
-        flex-direction: column;
-        height: auto;
-    }
-    .aside{
+
+    .footer{
+      font-family: Impact,sans-serif;
+      background-size: 35%;
+      margin-top: 10px;
+      padding-bottom: 50px;
+      font-size: 20px;
+  }
+
+.redes{
+    display: flex;
+    width: 100%;
+}
+    .redesL{
         display: flex;
         justify-content: center;
+        width: 100%;
     }
-    @media all and(max-width:600px){
-    .articulos{
-        flex-direction: column;
-    }
-    }
-    @media all and (max-width:400px) {
-        .aside{
-            flex-direction: column;
-        }
-        
-    }
-}
+
+  
+    
+
